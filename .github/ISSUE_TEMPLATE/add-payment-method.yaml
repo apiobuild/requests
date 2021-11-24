@@ -1,0 +1,51 @@
+name: Add Payment Method
+description: 
+title: "Add Payment Method: <name>"
+labels: ["chopin", "add-payment-method"]
+assignees:
+  - l1990790120
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Fill out this form to add a new payment method.
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: true
+  - type: input
+    id: payment-method-name
+    attributes:
+      label: Payment Method Name
+      description: Name of the payment method.
+    validations:
+      required: true
+  - type: dropdown
+    id: payment-method-type
+    attributes:
+      label: Payment Method Type
+      description: Select payment method type. Choose 'Send Money' for methods that requires vendor to provide phone numbers or email addresses for others to send you money. Choose 'Pay Cash' for methods that requires your customers to pay you directly. Choose 'API' for methods that requires API/backend integration from on your store. If you are unsure, choose 'Others' and add notes in the notes field below.
+      options:
+        - Send Money
+        - Pay Cash
+        - API (Stripe, Paypal)
+        - Others
+    validations:
+      required: true
+  - type: checkboxes
+    id: upload-payment-method-logo
+    attributes:
+      label: Upload Payment Method Logo
+      description: Please check the box after you have uploaded payment method logo here.
+      options:
+        - label: I confirm I have uploaded payment method logo.
+          required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Additional information about this payment method.
