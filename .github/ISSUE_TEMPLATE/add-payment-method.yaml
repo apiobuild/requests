@@ -1,5 +1,5 @@
 name: Add Payment Method
-description: 
+description: Use this form to propose/add a new payment method.
 title: "Add Payment Method: <name>"
 labels: ["chopin", "add-payment-method"]
 assignees:
@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Fill out this form to add a new payment method.
+        Thank you for contacting us. Fill out this form to add a new payment method. We will contact you after we have added the payment method to chopin.
   - type: input
     id: contact
     attributes:
