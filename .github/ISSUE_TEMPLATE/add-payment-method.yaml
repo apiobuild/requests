@@ -1,7 +1,7 @@
 name: Add Payment Method
 description: Use this form to propose/add a new payment method.
 title: "Add Payment Method: <name>"
-labels: ["chopin", "add-payment-method"]
+labels: ["chopin", "add-payment-method", "feature-request"]
 assignees:
   - l1990790120
 body:
